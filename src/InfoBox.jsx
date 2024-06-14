@@ -2,9 +2,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import WaterDropIcon from '@mui/icons-material/WaterDrop';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
+// import WbSunnyIcon from '@mui/icons-material/WbSunny';
+// import WaterDropIcon from '@mui/icons-material/WaterDrop';
+// import AcUnitIcon from '@mui/icons-material/AcUnit';
 import "./InfoBox.css"
 
 export default function InfoBox({info}){
@@ -27,7 +27,7 @@ export default function InfoBox({info}){
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {info.city}
-          {info.humidity>80?<WaterDropIcon/>:(info.temp>20?<WbSunnyIcon/>:<AcUnitIcon/>)}
+          {/* {info.humidity>80?<WaterDropIcon/>:(info.temp>20?<WbSunnyIcon/>:<AcUnitIcon/>)} */}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           <p>Temparature = {info.temp}&deg;C</p>
