@@ -4,7 +4,7 @@ import { useState } from 'react';
 import "./SearchBox.css";
 import { colors } from '@mui/material';
 export default function SearchBox({updateInfo}){
-    let URL = "http://api.openweathermap.org/data/2.5/weather"
+    let URL = "https://api.openweathermap.org/data/2.5/weather"
     const KEY = "156e0e92c2471af060de2bf887a806c5"
     let [city,setcity] = useState("");
     let [error,seterror] = useState(false);
